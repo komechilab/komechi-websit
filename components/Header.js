@@ -43,14 +43,14 @@ export default function Header({ header, nav }) {
       </div>
 
       <nav className="border-t border-gray-100">
-        <div className="mx-auto flex max-w-6xl justify-center gap-10 px-6 py-4">
+        <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-x-6 gap-y-2 px-6 py-4 sm:gap-x-10">
           {nav.map((item) => (
             <a
               key={item.label}
               href={item.href}
               target={item.external ? "_blank" : undefined}
               rel={item.external ? "noopener noreferrer" : undefined}
-              className="text-base font-semibold text-slate-700 transition hover:text-blue-700"
+              className="text-sm font-semibold text-slate-700 transition hover:text-blue-700 sm:text-base"
             >
               {item.label}
             </a>
