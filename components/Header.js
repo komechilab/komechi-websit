@@ -50,7 +50,7 @@ export default function Header({ header, nav }) {
               href={item.href}
               target={item.external ? "_blank" : undefined}
               rel={item.external ? "noopener noreferrer" : undefined}
-              className="text-sm font-semibold text-slate-700 transition hover:text-blue-700"
+              className="text-base font-semibold text-slate-700 transition hover:text-blue-700"
             >
               {item.label}
             </a>
