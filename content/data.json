@@ -1,0 +1,238 @@
+{
+  "site": {
+    "title": "C&L 코메치 연구소 | 도료 OEM/ODM 포털",
+    "description": "친환경 무기질 세라믹 코팅 솔루션 - C&L 코메치 연구소"
+  },
+  "topBar": {
+    "left": "C&L 코메치 연구소 · 친환경 무기질 세라믹 코팅 솔루션",
+    "right": "국내외 B2B 바이어를 위한 OEM · ODM · R&D 협업 문의를 접수합니다."
+  },
+  "header": {
+    "phone": "02-515-9088",
+    "phoneLabel": "대표전화",
+    "fax": "02-517-9088",
+    "faxLabel": "팩스",
+    "logoTitle": "C&L 코메치 연구소",
+    "logoSubtitle": "ADVANCED ECO CERAMIC COATING LAB",
+    "logoImage": "/images/logo.png",
+    "langLabel": "한국어",
+    "searchPlaceholder": "제품명 · 자료 검색",
+    "translateNote": "글로벌 바이어용 전체 페이지 번역 지원",
+    "languages": [
+      { "code": "ko", "label": "한국어" },
+      { "code": "en", "label": "English" },
+      { "code": "zh-CN", "label": "中文(简体)" },
+      { "code": "zh-TW", "label": "中文(繁體)" },
+      { "code": "ja", "label": "日本語" },
+      { "code": "vi", "label": "Tiếng Việt" },
+      { "code": "th", "label": "ภาษาไทย" },
+      { "code": "id", "label": "Bahasa Indonesia" }
+    ]
+  },
+  "nav": [
+    { "label": "기업소개", "href": "#about" },
+    { "label": "제품소개", "href": "#business" },
+    { "label": "자료실", "href": "https://blog.naver.com/komechi", "external": true },
+    { "label": "문의하기", "href": "#contact" }
+  ],
+  "hero": {
+    "backgroundImage": "/images/hero-lab.jpg",
+    "badge": "C&L KOMECHI LABORATORY",
+    "title": "10년 이상의 내구성, 압도적인 불연 성능\n미래 산업을 위한 무기질 세라믹 도료\n맞춤형 솔루션, C&L 코메치 연구소",
+    "subtitle": "친환경 건축용 차열 · 단열 도료부터 데이터센터 및 2차전지 배터리 특화 고기능성 산업용 도료까지, 귀사가 원하는 정밀 스펙으로 주문 제작 R&D 및 생산을 수행해 드립니다.",
+    "primaryCta": { "text": "문의하기", "href": "#contact" },
+    "secondaryCta": { "text": "자료실 보기", "href": "https://blog.naver.com/komechi" }
+  },
+  "business": {
+    "id": "business",
+    "eyebrow": "C&L 코메치 연구소 PRODUCT PORTFOLIO",
+    "title": "BUSINESS",
+    "subtitle": "C&L 코메치 연구소는 친환경 건축용 무기질 도료와 첨단 산업용 특수 도료를 하나의 연구 체계로 연결하여 산업별 요구에 맞는 맞춤형 솔루션을 제공합니다.",
+    "tabs": [
+      {
+        "label": "친환경 무기질 건축용 도료",
+        "intro": "C&L 코메치 연구소는 차열, 단열, 불연 성능을 중심으로 친환경 건축 프로젝트에 적합한 무기질 세라믹 도료를 제안합니다.",
+        "items": [
+          {
+            "image": "/images/business-1-1.png",
+            "title": "목조 구조물 불연 · 차열 코팅",
+            "description": "화재 안전성과 표면 안정성이 중요한 목조 구조물에 적용하여 장기적인 보호 성능과 열관리 효율을 함께 확보합니다.",
+            "tags": ["불연 성능", "차열 설계", "장기 내후성"]
+          },
+          {
+            "image": "/images/business-1-2.png",
+            "title": "봉안당 · 추모공원 시설 보호도장",
+            "description": "내외장재의 품격을 유지하면서 변색과 박리 리스크를 줄이는 도막 설계로 안정적인 유지관리 환경을 지원합니다.",
+            "tags": ["공공시설", "외관 유지", "친환경 적용"]
+          },
+          {
+            "image": "/images/business-1-3.png",
+            "title": "친환경 공공건축 외피 솔루션",
+            "description": "공공건축 및 특수 시설의 외피에 맞춰 열부하 저감과 내구성 중심의 설계를 적용해 유지비 절감에 기여합니다.",
+            "tags": ["공공 프로젝트", "열부하 저감", "맞춤 배합"]
+          }
+        ]
+      },
+      {
+        "label": "하이테크 산업용 특수 도료",
+        "intro": "C&L 코메치 연구소는 데이터센터, 전기차, 배터리, 전장부품 등 고기능 산업 분야에 필요한 정밀 스펙의 특수 도료를 개발합니다.",
+        "items": [
+          {
+            "image": "/images/business-2-1.jpg",
+            "title": "데이터센터 열관리 코팅",
+            "description": "장시간 가동 환경에서 열관리와 표면 안정성이 중요할 때 냉각 효율과 보호 성능을 함께 고려한 솔루션을 제안합니다.",
+            "tags": ["열관리", "장기 가동", "시설 보호"]
+          },
+          {
+            "image": "/images/business-2-2.png",
+            "title": "2차전지 팩 · 모듈 보호 코팅",
+            "description": "절연, 내열, 차폐, 표면 보호 요구에 대응할 수 있도록 배터리 부품과 모듈 환경에 맞춘 커스텀 배합을 제공합니다.",
+            "tags": ["배터리 적용", "절연 · 차폐", "고내열"]
+          },
+          {
+            "image": "/images/business-2-3.png",
+            "title": "전장부품 · 산업설비 고기능 도막",
+            "description": "가혹한 산업 조건에서도 신뢰성 있는 도막 성능을 구현할 수 있도록 용도별 내구성 기준에 맞춰 설계합니다.",
+            "tags": ["가혹 환경", "장기 신뢰성", "고기능성"]
+          }
+        ]
+      },
+      {
+        "label": "OEM · ODM · R&D 맞춤 개발",
+        "intro": "C&L 코메치 연구소는 기성 규격으로 해결되지 않는 요구 조건을 분석하여 기업별 성능 목표에 맞는 주문 제작 체계를 운영합니다.",
+        "items": [
+          {
+            "image": "/images/business-3-1.png",
+            "title": "스펙 기반 배합 설계",
+            "description": "내열 온도, 차폐 수치, 표면 특성 등 고객사가 제시하는 핵심 조건을 기준으로 배합과 적용 방향을 설계합니다.",
+            "tags": ["기업별 스펙", "배합 설계", "정밀 대응"]
+          },
+          {
+            "image": "/images/business-3-2.png",
+            "title": "샘플 테스트 및 검증 지원",
+            "description": "도입 검토 단계에서 필요한 샘플 테스트와 적용성 검토를 체계적으로 지원하여 의사결정 부담을 낮춥니다.",
+            "tags": ["샘플 제공", "적용 검토", "사전 테스트"]
+          },
+          {
+            "image": "/images/business-3-3.png",
+            "title": "양산 전환 및 협업 문서 대응",
+            "description": "개발 단계 이후 생산 전환과 협업 커뮤니케이션을 연결하여 구매팀과 기술팀이 함께 검토하기 쉬운 구조를 제공합니다.",
+            "tags": ["양산 대응", "기술 커뮤니케이션", "협업 효율"]
+          }
+        ]
+      }
+    ]
+  },
+  "partnership": {
+    "eyebrow": "C&L 코메치 연구소 COLLABORATION DIRECTORY",
+    "title": "PARTNERSHIP",
+    "subtitle": "C&L 코메치 연구소는 국내외 건설사, 공공기관, 데이터센터 운영사, 배터리 제조사, 해외 바이어와의 협업을 전제로 도입 검토 구조를 설계합니다.",
+    "backgroundImage": "/images/partnership-bg.jpg",
+    "industries": ["전체 산업군", "건설 · 건축", "공공 · 조달", "데이터센터", "배터리 · 전기차", "해외 바이어"],
+    "regions": ["전체 권역", "국내", "해외"],
+    "items": [
+      { "industryTag": "건설 · 건축", "regionTag": "국내", "title": "국내 건설사 구매 · 설계 부문", "description": "친환경 건축 외장 및 특수 시설 보호도장에 필요한 적용 솔루션 제안을 협의합니다." },
+      { "industryTag": "공공 · 조달", "regionTag": "국내", "title": "공공기관 시설 운영 부문", "description": "불연담, 추모시설 등 공공건축 유지보수 검토를 위한 자료 요청과 기술 검토를 지원합니다." },
+      { "industryTag": "데이터센터", "regionTag": "국내", "title": "데이터센터 개발 · 운영 부문", "description": "열관리, 내구성, 운영 안정성을 고려한 특수 도료 사양을 논의합니다." },
+      { "industryTag": "배터리 · 전기차", "regionTag": "국내", "title": "배터리 셀 · 팩 제조 부문", "description": "절연, 차폐, 고내열 특성이 요구되는 부품 코팅 커스텀 배합 검토를 진행합니다." },
+      { "industryTag": "배터리 · 전기차", "regionTag": "국내", "title": "전장부품 · 소재 구매 부문", "description": "부품 보호와 장기 신뢰성 확보를 위한 특수 도막 방향을 제안합니다." },
+      { "industryTag": "해외 바이어", "regionTag": "해외", "title": "해외 EPC · 산업설비 바이어", "description": "해외 프로젝트용 정밀 스펙과 협업 프로세스를 다국어 환경에 맞춰 안내합니다." },
+      { "industryTag": "데이터센터", "regionTag": "해외", "title": "테크 기업 인프라 구축 부문", "description": "고밀도 서버랙 전력 인프라에 필요한 코팅 요구 조건을 협의합니다." },
+      { "industryTag": "건설 · 건축", "regionTag": "해외", "title": "친환경 건축 개발 · 시공 부문", "description": "저탄소 설계 방향과 고기능 무기질 도료의 조합을 기반으로 공동 검토를 진행합니다." }
+    ]
+  },
+  "promise": {
+    "eyebrow": "C&L 코메치 연구소 COMPETITIVE EDGE",
+    "title": "PROMISE",
+    "subtitle": "C&L 코메치 연구소는 기성 제품이 해결하지 못하는 성능 요구를 연구 중심으로 해석하여 건축과 산업 현장 양쪽에서 신뢰할 수 있는 맞춤형 도료 체계를 제안합니다.",
+    "stats": [
+      { "value": "100%", "label": "주문 제작형 스펙 대응 중심 협업 구조를 운영합니다." },
+      { "value": "10+ YEARS", "label": "장기 내구성을 지향하는 롱라이프 설계를 핵심 기준으로 삼습니다." }
+    ],
+    "points": [
+      {
+        "number": "01",
+        "title": "100% 주문 제작형 R&D 설계",
+        "description": "C&L 코메치 연구소는 고객사의 요구 스펙을 세부적으로 분석하여 내열, 차열, 절연, 차폐, 표면 보호 조건을 반영한 맞춤형 배합을 설계합니다.",
+        "image": "/images/promise-1.jpg"
+      },
+      {
+        "number": "02",
+        "title": "10년 이상의 롱라이프 내구성 지향",
+        "description": "가혹한 운용 환경에서도 박리와 변색을 줄일 수 있도록 장기 신뢰성 중심의 도막 구조를 제안하며 유지관리 부담 완화를 지원합니다.",
+        "image": "/images/promise-2.jpg"
+      },
+      {
+        "number": "03",
+        "title": "친환경 건축부터 첨단 산업까지 확장성",
+        "description": "건축용 무기질 세라믹 도료와 산업용 특수 도료를 하나의 연구 역량으로 연결하여 프로젝트 특성에 맞는 솔루션 범위를 넓게 제공합니다.",
+        "image": "/images/promise-3.jpg"
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "C&L 코메치 연구소 WORKING PROCESS",
+    "title": "PROCESS",
+    "subtitle": "상담에서 최종 생산까지의 핵심 과정을 명확하게 안내하여 구매팀과 기술팀이 동일한 기준으로 검토할 수 있도록 지원합니다.",
+    "steps": [
+      { "number": "1", "title": "상담", "description": "도입 목적, 적용 대상, 필요 성능, 일정, 요청 자료를 파악합니다." },
+      { "number": "2", "title": "스펙 분석 및 배합 설계", "description": "현장 조건과 요구 수치를 바탕으로 최적의 설계 방향을 제안합니다." },
+      { "number": "3", "title": "샘플 테스트", "description": "적용성, 물성, 검토 포인트를 확인할 수 있도록 샘플 테스트를 진행합니다." },
+      { "number": "4", "title": "최종 생산", "description": "승인된 사양을 기준으로 생산과 후속 협업 커뮤니케이션을 연결합니다." }
+    ]
+  },
+  "location": {
+    "eyebrow": "C&L 코메치 연구소 OFFICE LOCATION",
+    "title": "LOCATION",
+    "subtitle": "C&L 코메치 연구소는 경기도 광명시를 거점으로 국내외 고객사의 기술 상담과 협업 제안을 접수합니다.",
+    "mapEmbedSrc": "https://www.google.com/maps?q=%EA%B2%BD%EA%B8%B0%EB%8F%84+%EA%B4%91%EB%AA%85%EC%8B%9C+%EB%B2%94%EC%95%88%EB%A1%9C996%EB%B2%88%EA%B8%B8+6&output=embed",
+    "mapLinkHref": "https://www.google.com/maps?q=%EA%B2%BD%EA%B8%B0%EB%8F%84+%EA%B4%91%EB%AA%85%EC%8B%9C+%EB%B2%94%EC%95%88%EB%A1%9C996%EB%B2%88%EA%B8%B8+6",
+    "mapLinkText": "Google 지도",
+    "naverMapHref": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EA%B4%91%EB%AA%85%EC%8B%9C%20%EB%B2%94%EC%95%88%EB%A1%9C996%EB%B2%88%EA%B8%B8%206",
+    "naverMapText": "네이버 지도",
+    "kakaoMapHref": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EA%B4%91%EB%AA%85%EC%8B%9C%20%EB%B2%94%EC%95%88%EB%A1%9C996%EB%B2%88%EA%B8%B8%206",
+    "kakaoMapText": "카카오맵",
+    "tmapHref": "tmap://search?name=%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EA%B4%91%EB%AA%85%EC%8B%9C%20%EB%B2%94%EC%95%88%EB%A1%9C996%EB%B2%88%EA%B8%B8%206",
+    "tmapText": "티맵 (모바일)",
+    "companyName": "C&L 코메치 연구소",
+    "addressLabel": "주소",
+    "address": "경기도 광명시 범안로996번길 6, 520호",
+    "addressExtra": "(광명티아모IT타워)",
+    "phoneLabel": "대표전화",
+    "phone": "02-515-9088",
+    "faxLabel": "팩스",
+    "fax": "02-517-9088",
+    "emailLabel": "이메일",
+    "email": "komechi@naver.com"
+  },
+  "contact": {
+    "id": "contact",
+    "eyebrow": "C&L 코메치 연구소 CONSULTATION DESK",
+    "sideTitle": "기술 상담과 제안 문의를 신속하게 접수합니다",
+    "sideSubtitle": "공공 조달, 해외 바이어 협업, 제품 적용 검토, 시험자료 요청 목적에 따라 C&L 코메치 연구소가 가장 적합한 상담 채널을 안내해 드립니다.",
+    "kakaoText": "카톡 상담",
+    "kakaoHref": "https://open.kakao.com/o/smVVxwNi",
+    "emailButtonText": "이메일 발송",
+    "emailButtonHref": "mailto:komechi@naver.com",
+    "infoBlocks": [
+      { "title": "공공 조달 및 제품 적용 검토", "description": "프로젝트 개요와 요구 성능을 보내주시면 검토 우선순위에 맞춰 상담을 진행합니다." },
+      { "title": "해외 바이어 협업 및 OEM · ODM 문의", "description": "다국어 번역 기능을 통해 전체 페이지 정보를 확인하신 뒤 협업 범위를 제안하실 수 있습니다." },
+      { "title": "공문 · 견적 요청서 팩스 접수", "description": "공공기관 공문, 정식 견적요청서(RFQ) 등 서류는 팩스로도 접수합니다 · 팩스 02-517-9088" },
+      { "title": "대표 연락처", "description": "전화 02-515-9088 · 팩스 02-517-9088 · 이메일 komechi@naver.com" }
+    ],
+    "formEyebrow": "C&L 코메치 연구소 INQUIRY FORM",
+    "formTitle": "간편 이메일 문의 폼",
+    "formSubtitle": "기술 검토와 도입 협의를 위해 필요한 기본 정보를 입력해 주십시오.",
+    "recipientEmail": "komechi@naver.com",
+    "web3formsAccessKey": "c4c6a1ba-c0a2-4b70-8964-260fe6d43805",
+    "inquiryTypes": ["제품 도입 문의", "OEM · ODM 협업 문의", "공공 조달 문의", "해외 바이어 문의", "기타 문의"],
+    "submitText": "이메일 문의 접수",
+    "kakaoSubmitText": "카카오톡 상담 연결",
+    "successMessage": "문의가 정상적으로 접수되었습니다. 빠르게 답변드리겠습니다.",
+    "errorMessage": "전송에 실패했습니다. 잠시 후 다시 시도하시거나 이메일로 직접 연락해 주세요.",
+    "consentText": "문의 응대와 회신을 위한 개인정보 수집 및 이용에 동의합니다."
+  },
+  "footer": {
+    "text": "© 2026 C&L 코메치 연구소. All rights reserved."
+  }
+}
