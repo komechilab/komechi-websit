@@ -2,7 +2,7 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default function Header({ header, nav }) {
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-100 bg-white">
+    <header className="border-b border-gray-100 bg-white">
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex flex-col gap-1.5">
           <div className="flex items-center gap-3">
@@ -42,7 +42,7 @@ export default function Header({ header, nav }) {
         </div>
       </div>
 
-      <nav className="border-t border-gray-100">
+      <nav className="sticky top-0 z-50 border-t border-gray-100 bg-white">
         <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-x-6 gap-y-2 px-6 py-4 sm:gap-x-10">
           {nav.map((item) => (
             <a
