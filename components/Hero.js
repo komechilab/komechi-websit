@@ -10,7 +10,7 @@ export default function Hero({ data }) {
         <span className="inline-block rounded-full border border-white/30 px-4 py-1.5 text-xs font-semibold tracking-wide">
           {data.badge}
         </span>
-        <h1 className="mt-6 whitespace-pre-line text-3xl font-extrabold leading-snug sm:text-4xl">
+        <h1 className="mt-6 text-3xl font-extrabold leading-snug sm:whitespace-pre-line sm:text-4xl">
           {data.title}
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-sm text-slate-200 sm:text-base">
