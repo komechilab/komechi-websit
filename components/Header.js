@@ -34,7 +34,12 @@ export default function Header({ header, nav }) {
         {/* Desktop / tablet layout */}
         <div className="hidden sm:flex sm:items-center sm:justify-between sm:gap-6">
           <div className="flex flex-col items-start gap-1.5">
-            <ContactRow icon="☎" label={header.phoneLabel} value={header.phone} />
+            <ContactRow
+              icon="☎"
+              label={header.phoneLabel}
+              value={header.phone}
+              href={`tel:${header.phone}`}
+            />
             <ContactRow icon="📠" label={header.faxLabel} value={header.fax} />
             <ContactRow
               icon="✉️"
@@ -79,7 +84,12 @@ export default function Header({ header, nav }) {
 
           <div className="flex w-full items-start justify-between gap-3">
             <div className="flex flex-col items-start gap-1.5">
-              <ContactRow icon="☎" label={header.phoneLabel} value={header.phone} />
+              <ContactRow
+                icon="☎"
+                label={header.phoneLabel}
+                value={header.phone}
+                href={`tel:${header.phone}`}
+              />
               <ContactRow icon="📠" label={header.faxLabel} value={header.fax} />
               <ContactRow
                 icon="✉️"
