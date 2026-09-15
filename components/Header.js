@@ -101,14 +101,6 @@ export default function Header({ header, nav }) {
 
             <div className="flex flex-col items-end gap-2 text-right">
               <LanguageSwitcher languages={header.languages} />
-              <a
-                href={header.blogUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs font-semibold text-blue-600 underline-offset-2 hover:underline"
-              >
-                {header.blogLabel}
-              </a>
             </div>
           </div>
         </div>
