@@ -41,12 +41,7 @@ export default function Header({ header, nav }) {
               href={`tel:${header.phone}`}
             />
             <ContactRow icon="📠" label={header.faxLabel} value={header.fax} />
-            <ContactRow
-              icon="✉️"
-              label={header.emailLabel}
-              value={header.email}
-              href={`mailto:${header.email}`}
-            />
+            <ContactRow icon="✉️" label={header.emailLabel} value={header.email} />
           </div>
 
           <div className="flex flex-col items-center gap-2">
@@ -55,19 +50,11 @@ export default function Header({ header, nav }) {
               alt={header.logoTitle}
               className="h-24 w-auto object-contain"
             />
-            <a
-              href={header.blogUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-semibold text-blue-600 underline-offset-2 hover:underline"
-            >
-              {header.blogLabel} 바로가기 →
-            </a>
           </div>
 
           <div className="flex flex-col items-end gap-2">
             <div className="flex items-center gap-3">
-              <span className="text-sm text-gray-500">언어</span>
+              <span className="text-sm text-gray-500">Language</span>
               <LanguageSwitcher languages={header.languages} />
             </div>
             <p className="text-xs text-blue-600">{header.translateNote}</p>
@@ -91,15 +78,11 @@ export default function Header({ header, nav }) {
                 href={`tel:${header.phone}`}
               />
               <ContactRow icon="📠" label={header.faxLabel} value={header.fax} />
-              <ContactRow
-                icon="✉️"
-                label={header.emailLabel}
-                value={header.email}
-                href={`mailto:${header.email}`}
-              />
+              <ContactRow icon="✉️" label={header.emailLabel} value={header.email} />
             </div>
 
             <div className="flex flex-col items-end gap-2 text-right">
+              <span className="text-xs text-gray-500">Language</span>
               <LanguageSwitcher languages={header.languages} />
             </div>
           </div>
