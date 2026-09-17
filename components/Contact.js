@@ -46,7 +46,7 @@ export default function Contact({ data }) {
           </h2>
           <p className="mt-4 text-sm text-slate-300">{data.sideSubtitle}</p>
 
-          <div className="mt-8 grid grid-cols-2 gap-3">
+          <div className="mt-8 grid grid-cols-3 gap-3">
             <a
               href={data.kakaoHref}
               target="_blank"
@@ -63,6 +63,17 @@ export default function Contact({ data }) {
               <span className="text-2xl">✉️</span>
               <span className="text-sm font-semibold">
                 {data.emailButtonText}
+              </span>
+            </a>
+            <a
+              href={data.youtubeButtonHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center gap-2 rounded-lg bg-red-600 px-4 py-5 text-center transition hover:bg-red-700"
+            >
+              <span className="text-2xl">▶</span>
+              <span className="text-sm font-semibold">
+                {data.youtubeButtonText}
               </span>
             </a>
           </div>

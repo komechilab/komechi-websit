@@ -50,6 +50,14 @@ export default function Header({ header, nav }) {
               alt={header.logoTitle}
               className="h-24 w-auto object-contain"
             />
+            <a
+              href={header.youtubeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-semibold text-red-600 underline-offset-2 hover:underline"
+            >
+              ▶ {header.youtubeLabel} 바로가기
+            </a>
           </div>
 
           <div className="flex flex-col items-end gap-2">
@@ -84,6 +92,14 @@ export default function Header({ header, nav }) {
             <div className="flex flex-col items-end gap-2 text-right">
               <span className="text-xs text-gray-500">Language</span>
               <LanguageSwitcher languages={header.languages} />
+              <a
+                href={header.youtubeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-semibold text-red-600 underline-offset-2 hover:underline"
+              >
+                ▶ {header.youtubeLabel}
+              </a>
             </div>
           </div>
         </div>

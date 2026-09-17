@@ -16,6 +16,8 @@
     "emailLabel": "이메일",
     "blogUrl": "https://blog.naver.com/komechi",
     "blogLabel": "자료실(블로그)",
+    "youtubeUrl": "https://www.youtube.com/@komechilab",
+    "youtubeLabel": "유튜브",
     "logoTitle": "C&L 코메치 연구소",
     "logoSubtitle": "ADVANCED ECO CERAMIC COATING LAB",
     "logoImage": "/images/logo.png",
@@ -37,6 +39,7 @@
     { "label": "기업소개", "href": "#about" },
     { "label": "제품소개", "href": "#business" },
     { "label": "자료실(블로그)", "href": "https://blog.naver.com/komechi", "external": true },
+    { "label": "유튜브", "href": "https://www.youtube.com/@komechilab", "external": true },
     { "label": "문의하기", "href": "#contact" }
   ],
   "hero": {
@@ -218,6 +221,8 @@
     "kakaoHref": "https://open.kakao.com/o/smVVxwNi",
     "emailButtonText": "이메일 발송",
     "emailButtonHref": "mailto:komechi@naver.com",
+    "youtubeButtonText": "유튜브 채널",
+    "youtubeButtonHref": "https://www.youtube.com/@komechilab",
     "infoBlocks": [
       { "title": "공공 조달 및 제품 적용 검토", "description": "프로젝트 개요와 요구 성능을 보내주시면 검토 우선순위에 맞춰 상담을 진행합니다." },
       { "title": "해외 바이어 협업 및 OEM · ODM 문의", "description": "다국어 번역 기능을 통해 전체 페이지 정보를 확인하신 뒤 협업 범위를 제안하실 수 있습니다." },
@@ -237,6 +242,8 @@
     "consentText": "문의 응대와 회신을 위한 개인정보 수집 및 이용에 동의합니다."
   },
   "footer": {
-    "text": "© 2026 C&L 코메치 연구소. All rights reserved."
+    "text": "© 2026 C&L 코메치 연구소. All rights reserved.",
+    "youtubeUrl": "https://www.youtube.com/@komechilab",
+    "youtubeLabel": "유튜브 채널 바로가기"
   }
 }
