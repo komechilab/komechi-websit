@@ -50,14 +50,6 @@ export default function Header({ header, nav }) {
               alt={header.logoTitle}
               className="h-24 w-auto object-contain"
             />
-            <a
-              href={header.youtubeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-semibold text-red-600 underline-offset-2 hover:underline"
-            >
-              ▶ {header.youtubeLabel} 바로가기
-            </a>
           </div>
 
           <div className="flex flex-col items-end gap-2">
@@ -65,7 +57,21 @@ export default function Header({ header, nav }) {
               <span className="text-sm text-gray-500">Language</span>
               <LanguageSwitcher languages={header.languages} />
             </div>
-            <p className="text-xs text-blue-600">{header.translateNote}</p>
+            <a
+              href={header.youtubeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-xs font-semibold text-slate-700 transition hover:text-red-600"
+            >
+              <svg viewBox="0 0 28 20" className="h-4 w-5" aria-hidden="true">
+                <path
+                  d="M27.4 3.1a3.5 3.5 0 0 0-2.46-2.48C22.76.1 14 .1 14 .1s-8.76 0-10.94.52A3.5 3.5 0 0 0 .6 3.1 36.6 36.6 0 0 0 .08 10a36.6 36.6 0 0 0 .52 6.9 3.5 3.5 0 0 0 2.46 2.48C5.24 19.9 14 19.9 14 19.9s8.76 0 10.94-.52a3.5 3.5 0 0 0 2.46-2.48A36.6 36.6 0 0 0 27.92 10a36.6 36.6 0 0 0-.52-6.9Z"
+                  fill="#FF0000"
+                />
+                <path d="M11.2 14.2 18.5 10l-7.3-4.2v8.4Z" fill="#fff" />
+              </svg>
+              {header.youtubeLabel} 바로가기
+            </a>
           </div>
         </div>
 
