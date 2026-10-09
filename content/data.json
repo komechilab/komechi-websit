@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "C&L 코메치 연구소 | 도료 OEM/ODM 포털",
-    "description": "친환경 무기질 세라믹 코팅 솔루션 - C&L 코메치 연구소"
+    "title": "C&L 코메치 연구소 (C&L Komechi Corporation) | 도료 OEM/ODM 포털",
+    "description": "친환경 무기질 세라믹 코팅 솔루션 - C&L 코메치 연구소 / C&L Komechi Corporation, a Korean manufacturer of functional ceramic coatings (ceraX)."
   },
   "topBar": {
     "left": "C&L 코메치 연구소 · 친환경 무기질 세라믹 코팅 솔루션",
@@ -12,7 +12,7 @@
     "phoneLabel": "대표전화",
     "fax": "02-517-9088",
     "faxLabel": "팩스",
-    "email": "komechi@naver.com",
+    "email": "komechi@komechi.co.kr",
     "emailLabel": "이메일",
     "blogUrl": "https://blog.naver.com/komechi",
     "blogLabel": "자료실(블로그)",
@@ -211,7 +211,7 @@
     "faxLabel": "팩스",
     "fax": "02-517-9088",
     "emailLabel": "이메일",
-    "email": "komechi@naver.com"
+    "email": "komechi@komechi.co.kr"
   },
   "contact": {
     "id": "contact",
@@ -221,14 +221,14 @@
     "kakaoText": "카톡 상담",
     "kakaoHref": "https://open.kakao.com/o/smVVxwNi",
     "emailButtonText": "이메일 발송",
-    "emailButtonHref": "mailto:komechi@naver.com",
+    "emailButtonHref": "mailto:komechi@komechi.co.kr",
     "youtubeButtonText": "유튜브 채널",
     "youtubeButtonHref": "https://www.youtube.com/@komechilab",
     "infoBlocks": [
       { "title": "공공 조달 및 제품 적용 검토", "description": "프로젝트 개요와 요구 성능을 보내주시면 검토 우선순위에 맞춰 상담을 진행합니다." },
       { "title": "해외 바이어 협업 및 OEM · ODM 문의", "description": "다국어 번역 기능을 통해 전체 페이지 정보를 확인하신 뒤 협업 범위를 제안하실 수 있습니다." },
       { "title": "공문 · 견적 요청서 팩스 접수", "description": "공공기관 공문, 정식 견적요청서(RFQ) 등 서류는 팩스로도 접수합니다 · 팩스 02-517-9088" },
-      { "title": "대표 연락처", "description": "전화 02-515-9088 · 팩스 02-517-9088 · 이메일 komechi@naver.com" }
+      { "title": "대표 연락처", "description": "전화 02-515-9088 · 팩스 02-517-9088 · 이메일 komechi@komechi.co.kr (komechi@naver.com)" }
     ],
     "formEyebrow": "C&L 코메치 연구소 INQUIRY FORM",
     "formTitle": "간편 이메일 문의 폼",
@@ -269,9 +269,14 @@
       }
     ],
     "noteTitle": "작성 후 보내실 곳",
-    "noteText": "작성이 완료되면 이메일(komechi@naver.com) 또는 카카오톡 상담으로 파일을 보내주세요. 확인 후 빠르게 회신드리겠습니다."
+    "noteText": "작성이 완료되면 이메일(komechi@komechi.co.kr) 또는 카카오톡 상담으로 파일을 보내주세요. 확인 후 빠르게 회신드리겠습니다."
   },
   "footer": {
-    "text": "© 2026 C&L 코메치 연구소. All rights reserved."
+    "lines": [
+      "(주)C&L 코메치 연구소 | 대표이사 조진우 | 사업자등록번호 571-88-03375",
+      "C&L Komechi Corporation | CEO Jinwoo Cho | Business Registration No. 571-88-03375 | Founded October 2025",
+      "520, 6 Beoman-ro 996beon-gil, Gwangmyeong-si, Gyeonggi-do, Republic of Korea | komechi@komechi.co.kr | +82-2-515-9088"
+    ],
+    "text": "© 2026 C&L Komechi Corporation. All rights reserved."
   }
 }
