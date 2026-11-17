@@ -6,12 +6,11 @@ import { useEffect, useState } from "react";
 export default function HeroRotator({ words }) {
   const [i, setI] = useState(0);
   useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const t = setInterval(() => setI((n) => (n + 1) % words.length), 2600);
     return () => clearInterval(t);
   }, [words.length]);
   return (
-    <span className="relative inline-block min-w-[6.5em] text-right text-sky-300">
+    <span className="relative block text-center text-sky-300 sm:inline-block sm:min-w-[6.5em] sm:text-right">
       <span key={i} className="hero-word inline-block">
         {words[i]}
       </span>

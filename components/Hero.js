@@ -21,12 +21,12 @@ export default function Hero({ data }) {
       <div className="mx-auto w-full max-w-5xl px-6 text-center">
         <span
           style={{ animationDelay: "0.1s" }}
-          className="hero-in inline-block rounded-full border border-white/25 bg-white/5 px-4 py-1.5 text-[0.7rem] font-semibold tracking-[0.2em] text-sky-200 backdrop-blur sm:text-xs"
+          className="hero-in inline-block rounded-full border border-white/25 bg-white/5 px-4 py-1.5 text-[0.7rem] font-semibold tracking-[0.12em] text-sky-200 sm:tracking-[0.2em] backdrop-blur sm:text-xs"
         >
           {data.badge}
         </span>
 
-        <h1 className="mt-7 text-[1.85rem] font-extrabold leading-tight sm:text-6xl sm:leading-tight">
+        <h1 className="mt-7 text-[1.5rem] font-extrabold leading-snug sm:text-6xl sm:leading-tight">
           {lines.map((line, i) => (
             <span key={line} className="block overflow-hidden pb-1">
               <span
@@ -44,12 +44,12 @@ export default function Hero({ data }) {
           className="hero-in mt-6 text-base font-semibold text-slate-200 sm:text-2xl"
         >
           <HeroRotator words={data.rotatingWords} />
-          {data.rotatingSuffix}
+          <span className="sm:ml-2">{data.rotatingSuffix}</span>
         </p>
 
         <p
           style={{ animationDelay: "1.25s" }}
-          className="hero-in mx-auto mt-6 max-w-2xl text-[0.85rem] leading-relaxed text-slate-300 sm:text-base"
+          className="hero-in mx-auto mt-6 max-w-2xl text-balance text-[0.85rem] leading-relaxed text-slate-300 sm:text-base"
         >
           {data.subtitle}
         </p>

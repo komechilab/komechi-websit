@@ -97,7 +97,7 @@
   ],
   "hero": {
     "backgroundImage": "/images/hero-lab.jpg",
-    "badge": "C&L KOMECHI LABORATORY · SINCE 2025",
+    "badge": "C&L KOMECHI LABORATORY",
     "title": "오래 지키는 표면이\n지속 가능한 내일을 만듭니다",
     "subtitle": "C&L 코메치 연구소는 불에 강하고 오래가는 무기질 세라믹 도료를 연구하고 만듭니다. 자주 다시 칠하지 않아도 되는 표면, 더 적게 쓰고 더 오래 쓰는 건물과 설비. 저희가 생각하는 친환경은 거기서 시작합니다.",
     "primaryCta": {
@@ -118,7 +118,7 @@
       "현장의 안전을",
       "다음 세대를"
     ],
-    "rotatingSuffix": " 더 오래 지키는 무기질 세라믹 기술"
+    "rotatingSuffix": "더 오래 지키는 무기질 세라믹 기술"
   },
   "business": {
     "id": "business",
@@ -697,8 +697,8 @@
     ],
     "facts": [
       {
-        "value": "2025",
-        "label": "법인 설립"
+        "value": "맞춤 배합",
+        "label": "현장 사양별 주문 제작"
       },
       {
         "value": "기술 제휴",

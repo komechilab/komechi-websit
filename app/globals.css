@@ -79,6 +79,7 @@ body { word-break: keep-all; overflow-wrap: break-word; }
 .hero-orb-3 { width: 18rem; height: 18rem; left: 30%; bottom: -8rem; background: #14b8a6; opacity: .3; animation-delay: -9s; }
 .hero-scroll span { animation: scrollHint 1.8s ease-in-out infinite; }
 @media (prefers-reduced-motion: reduce) {
-  .hero-line, .hero-shine, .hero-word, .hero-orb, .hero-scroll span { animation: none; }
+  .hero-line, .hero-shine, .hero-orb, .hero-scroll span { animation: none; }
+  .hero-word { animation: pageIn 0.4s ease both; }
   .hero-shine { color: #7dd3fc; background: none; }
 }

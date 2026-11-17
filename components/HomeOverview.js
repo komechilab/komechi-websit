@@ -6,7 +6,7 @@ export default function HomeOverview({ data }) {
         <p className="text-center text-sm font-bold tracking-wide text-blue-600">
           {data.eyebrow}
         </p>
-        <h2 className="mt-3 whitespace-pre-line text-center text-2xl font-extrabold leading-snug text-slate-900 sm:text-4xl">
+        <h2 className="mt-3 whitespace-pre-line text-balance text-center text-[1.4rem] font-extrabold leading-snug text-slate-900 sm:text-4xl">
           {data.headline}
         </h2>
 
