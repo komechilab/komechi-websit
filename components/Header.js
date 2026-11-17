@@ -46,13 +46,13 @@ export default function Header({ header, nav }) {
             <ContactRow icon="✉️" label={header.emailLabel} value={header.email} />
           </div>
 
-          <div className="flex flex-col items-center gap-2">
+          <a href="/" aria-label="홈으로" className="flex flex-col items-center gap-2 transition hover:opacity-80">
             <img
               src={header.logoImage}
               alt={header.logoTitle}
               className="h-24 w-auto object-contain"
             />
-          </div>
+          </a>
 
           <div className="flex flex-col items-end gap-2">
             <div className="flex items-center gap-3">
