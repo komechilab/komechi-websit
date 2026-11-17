@@ -40,7 +40,7 @@ export default function Business({ data }) {
         {activeTab.items.map((item) => (
           <div
             key={item.title}
-            className="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-gray-100"
+            className="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-gray-100 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
           >
             <img
               src={item.image}

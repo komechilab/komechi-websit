@@ -13,7 +13,7 @@ export default function Advisor({ data }) {
         {data.people.map((person) => (
           <div
             key={person.name}
-            className="rounded-xl bg-white p-7 shadow-sm ring-1 ring-gray-200"
+            className="rounded-xl bg-white p-7 shadow-sm ring-1 ring-gray-200 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
           >
             <p className="text-2xl font-extrabold text-slate-900">
               {person.name}

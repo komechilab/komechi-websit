@@ -1,6 +1,7 @@
 import "./globals.css";
 import data from "@/content/data.json";
 import GoogleTranslate from "@/components/GoogleTranslate";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
   title: data.site.title,
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       <body className="bg-white text-gray-900 antialiased">
         <GoogleTranslate />
         {children}
+        <ScrollReveal />
       </body>
     </html>
   );
