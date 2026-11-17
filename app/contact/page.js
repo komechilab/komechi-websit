@@ -1,6 +1,7 @@
 import data from "@/content/data.json";
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
+import PageHero from "@/components/PageHero";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -15,6 +16,7 @@ export default function ContactPage() {
       <TopBar data={data.topBar} />
       <Header header={data.header} nav={data.nav} />
       <main>
+        <PageHero data={data.pageHeroes.contact} />
         <Contact data={data.contact} />
       </main>
       <Footer data={data.footer} />

@@ -83,3 +83,22 @@ body { word-break: keep-all; overflow-wrap: break-word; }
   .hero-word { animation: pageIn 0.4s ease both; }
   .hero-shine { color: #7dd3fc; background: none; }
 }
+
+/* ───── 페이지 배너(밝은 버전) ───── */
+.page-orb-1 { width: 24rem; height: 24rem; left: -7rem; top: -8rem; background: #93c5fd; opacity: .55; }
+.page-orb-2 { width: 20rem; height: 20rem; right: -6rem; bottom: -9rem; background: #67e8f9; opacity: .45; animation-delay: -6s; }
+.page-grid {
+  background-image: linear-gradient(rgba(37,99,235,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(37,99,235,.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+}
+.page-shine {
+  background: linear-gradient(90deg, #1d4ed8, #0ea5e9, #2563eb, #0ea5e9, #1d4ed8);
+  background-size: 200% auto;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  animation: lineUp 1s cubic-bezier(0.22, 1, 0.36, 1) both, shine 6s linear 1.2s infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-shine { animation: none; color: #1d4ed8; background: none; }
+}

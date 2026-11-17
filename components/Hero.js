@@ -4,7 +4,7 @@ import HeroRotator from "@/components/HeroRotator";
 export default function Hero({ data }) {
   const lines = data.title.split("\n");
   return (
-    <section className="relative isolate flex min-h-[88vh] items-center overflow-hidden bg-slate-950 py-20 text-white sm:min-h-[92vh]">
+    <section className="relative isolate flex min-h-[88vh] items-center overflow-hidden bg-slate-950 py-20 text-white sm:min-h-0 sm:py-24 lg:py-28">
       {/* 배경 사진: 천천히 당겨짐 */}
       <div
         aria-hidden="true"

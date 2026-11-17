@@ -1,6 +1,7 @@
 import data from "@/content/data.json";
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
+import PageHero from "@/components/PageHero";
 import Business from "@/components/Business";
 import Process from "@/components/Process";
 import Footer from "@/components/Footer";
@@ -16,6 +17,7 @@ export default function ProductsPage() {
       <TopBar data={data.topBar} />
       <Header header={data.header} nav={data.nav} />
       <main>
+        <PageHero data={data.pageHeroes.products} />
         <Business data={data.business} />
         <Process data={data.process} />
       </main>

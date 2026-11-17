@@ -713,5 +713,32 @@
         "label": "광명 공장 생산 · OEM 병행"
       }
     ]
+  },
+  "pageHeroes": {
+    "about": {
+      "eyebrow": "ABOUT US · 기업소개",
+      "title": "기술로 신뢰를 쌓고\n오래가는 가치를 만듭니다",
+      "description": "일본의 원천 무기질 세라믹 기술을 국내 환경에 맞게 개량해 직접 만드는 기능성 도료 전문 기업입니다."
+    },
+    "products": {
+      "eyebrow": "PRODUCTS · 제품소개",
+      "title": "현장에 맞춘 배합\n세라엑스(ceraX)",
+      "description": "건축물 외벽부터 산업용 고온 설비까지, 필요한 성능에 맞춰 설계하고 공급합니다."
+    },
+    "consulting": {
+      "eyebrow": "CONSULTING · 경영컨설팅 · PM",
+      "title": "사업의 처음부터 끝까지\n함께 관리합니다",
+      "description": "업종에 관계없이 기업과 기관의 사업관리(PM)와 경영 자문을 제공합니다."
+    },
+    "contact": {
+      "eyebrow": "CONTACT · 문의하기",
+      "title": "현장에 맞는 사양\n함께 찾겠습니다",
+      "description": "제품 도입, 주문 제작, 경영컨설팅 문의를 남겨 주시면 확인 후 회신드립니다."
+    },
+    "specRequest": {
+      "eyebrow": "SPEC REQUEST · 사양요청서",
+      "title": "필요한 성능을 알려 주시면\n맞춤 배합을 설계합니다",
+      "description": "양식을 내려받아 작성한 뒤 메일이나 팩스로 보내 주세요."
+    }
   }
 }

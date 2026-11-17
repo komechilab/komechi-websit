@@ -1,6 +1,7 @@
 import data from "@/content/data.json";
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
+import PageHero from "@/components/PageHero";
 import PromiseSection from "@/components/PromiseSection";
 import Partnership from "@/components/Partnership";
 import Advisor from "@/components/Advisor";
@@ -18,6 +19,7 @@ export default function AboutPage() {
       <TopBar data={data.topBar} />
       <Header header={data.header} nav={data.nav} />
       <main>
+        <PageHero data={data.pageHeroes.about} />
         <PromiseSection data={data.promise} />
         <Advisor data={data.ceo} />
         <Partnership data={data.partnership} />
