@@ -29,6 +29,16 @@ export default function Advisor({ data }) {
                 </li>
               ))}
             </ul>
+            {person.cardUrl && (
+              <a
+                href={person.cardUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-block rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
+              >
+                {data.cardLabel} →
+              </a>
+            )}
           </div>
         ))}
       </div>

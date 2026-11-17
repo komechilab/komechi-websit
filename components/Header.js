@@ -1,3 +1,4 @@
+import NavLinks from "@/components/NavLinks";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 function ContactRow({ icon, label, value, href }) {
@@ -113,17 +114,7 @@ export default function Header({ header, nav }) {
 
       <nav className="sticky top-0 z-50 border-t border-gray-100 bg-white">
         <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-x-6 gap-y-2 px-6 py-4 sm:gap-x-10">
-          {nav.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              target={item.external ? "_blank" : undefined}
-              rel={item.external ? "noopener noreferrer" : undefined}
-              className="text-sm font-semibold text-slate-700 transition hover:text-blue-700 sm:text-base"
-            >
-              {item.label}
-            </a>
-          ))}
+          <NavLinks nav={nav} />
         </div>
       </nav>
     </header>

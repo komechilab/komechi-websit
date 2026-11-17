@@ -62,19 +62,15 @@
   "nav": [
     {
       "label": "기업소개",
-      "href": "/#about"
+      "href": "/about"
     },
     {
       "label": "제품소개",
-      "href": "/#business"
+      "href": "/products"
     },
     {
       "label": "경영컨설팅 · PM",
       "href": "/consulting"
-    },
-    {
-      "label": "고문 소개",
-      "href": "/consulting#advisor"
     },
     {
       "label": "사양요청서",
@@ -92,7 +88,7 @@
     },
     {
       "label": "문의하기",
-      "href": "/#contact"
+      "href": "/contact"
     }
   ],
   "hero": {
@@ -102,7 +98,7 @@
     "subtitle": "친환경 건축용 차열 · 단열 도료부터 데이터센터 및 2차전지 배터리 특화 고기능성 산업용 도료까지, 귀사가 원하는 정밀 스펙으로 주문 제작 R&D 및 생산을 수행해 드립니다.\n또한 업종에 관계없이 기업과 기관을 위한 사업관리(PM)와 경영 자문 서비스도 제공합니다.",
     "primaryCta": {
       "text": "문의하기",
-      "href": "#contact"
+      "href": "/contact"
     },
     "secondaryCta": {
       "text": "자료실 보기",
@@ -589,7 +585,7 @@
     ],
     "cta": {
       "text": "경영컨설팅 · PM 문의하기",
-      "href": "/#contact"
+      "href": "/contact"
     },
     "industriesTitle": "자문 대상",
     "industries": [
@@ -615,14 +611,37 @@
           "공군 대령 전역 (재정 병과)",
           "감사원 · 국방부 · 국방과학연구소 감사 업무",
           "공군사관학교 졸업 · 경영학 석사"
-        ]
+        ],
+        "cardUrl": "/card/parkjunguk"
       },
       {
         "name": "김산",
         "role": "고문",
         "bio": [
           "공익재단법인 아태평화기금회(APPF) 이사장"
-        ]
+        ],
+        "cardUrl": "/card/kimsan"
+      }
+    ],
+    "cardLabel": "전자명함 보기"
+  },
+  "quickLinks": {
+    "title": "필요한 정보를 바로 확인하세요",
+    "items": [
+      {
+        "label": "기업소개",
+        "description": "C&L 코메치 연구소의 약속과 협력 네트워크, 오시는 길",
+        "href": "/about"
+      },
+      {
+        "label": "제품소개",
+        "description": "건축용 · 산업용 세라엑스 제품과 주문 제작 진행 과정",
+        "href": "/products"
+      },
+      {
+        "label": "경영컨설팅 · PM",
+        "description": "업종에 관계없는 사업관리(PM) · 경영 자문과 고문 소개",
+        "href": "/consulting"
       }
     ]
   }
