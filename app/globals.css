@@ -55,3 +55,30 @@ main { animation: pageIn 0.6s ease-out both; }
 
 /* 한국어 문장이 단어 중간(예: 연구/소)에서 끊기지 않게 */
 body { word-break: keep-all; overflow-wrap: break-word; }
+
+/* ───── 메인 첫 화면 애니메이션 ───── */
+@keyframes lineUp { from { transform: translateY(110%); } to { transform: none; } }
+@keyframes shine { to { background-position: 200% center; } }
+@keyframes wordIn { from { opacity: 0; transform: translateY(60%); filter: blur(4px); } to { opacity: 1; transform: none; filter: none; } }
+@keyframes orbFloat { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(30px,-40px) scale(1.12); } }
+@keyframes scrollHint { 0%,100% { transform: translateY(0); opacity: .9; } 50% { transform: translateY(8px); opacity: .4; } }
+/* 제목 줄이 아래에서 밀려 올라옴 */
+.hero-line { animation: lineUp 1s cubic-bezier(0.22, 1, 0.36, 1) both; }
+/* 마지막 줄: 하늘색 빛이 흐르는 글씨 */
+.hero-shine {
+  background: linear-gradient(90deg, #7dd3fc, #ffffff, #38bdf8, #ffffff, #7dd3fc);
+  background-size: 200% auto;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  animation: lineUp 1s cubic-bezier(0.22, 1, 0.36, 1) both, shine 6s linear 1.4s infinite;
+}
+.hero-word { animation: wordIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+/* 떠다니는 빛 덩어리 */
+.hero-orb { position: absolute; z-index: -10; border-radius: 9999px; filter: blur(70px); opacity: .45; animation: orbFloat 14s ease-in-out infinite; }
+.hero-orb-1 { width: 26rem; height: 26rem; left: -8rem; top: -6rem; background: #2563eb; }
+.hero-orb-2 { width: 22rem; height: 22rem; right: -6rem; top: 30%; background: #0ea5e9; animation-delay: -5s; }
+.hero-orb-3 { width: 18rem; height: 18rem; left: 30%; bottom: -8rem; background: #14b8a6; opacity: .3; animation-delay: -9s; }
+.hero-scroll span { animation: scrollHint 1.8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .hero-line, .hero-shine, .hero-word, .hero-orb, .hero-scroll span { animation: none; }
+  .hero-shine { color: #7dd3fc; background: none; }
+}

@@ -1,25 +1,66 @@
+import HeroRotator from "@/components/HeroRotator";
+
+// 메인 첫 화면: 빛나는 배경 위로 비전 문구가 한 줄씩 떠오르고, 지키는 대상이 바뀌어 나타난다
 export default function Hero({ data }) {
+  const lines = data.title.split("\n");
   return (
-    <section
-      className="hero-zoom relative bg-slate-900 bg-cover bg-center py-14 sm:py-32"
-      style={{
-        backgroundImage: `linear-gradient(rgba(10,16,32,0.75), rgba(10,16,32,0.85)), url(${data.backgroundImage})`,
-      }}
-    >
-      <div className="mx-auto max-w-4xl px-6 text-center text-white">
-        <span style={{ animationDelay: "0.1s" }} className="hero-in inline-block rounded-full border border-white/30 px-4 py-1.5 text-xs font-semibold tracking-wide">
+    <section className="relative isolate flex min-h-[88vh] items-center overflow-hidden bg-slate-950 py-20 text-white sm:min-h-[92vh]">
+      {/* 배경 사진: 천천히 당겨짐 */}
+      <div
+        aria-hidden="true"
+        className="hero-zoom absolute inset-0 -z-20 bg-cover bg-center opacity-35"
+        style={{ backgroundImage: `url(${data.backgroundImage})` }}
+      />
+      {/* 어둡게 덮는 그라데이션 */}
+      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-b from-slate-950/70 via-slate-950/60 to-slate-950" />
+      {/* 떠다니는 빛 */}
+      <div aria-hidden="true" className="hero-orb hero-orb-1" />
+      <div aria-hidden="true" className="hero-orb hero-orb-2" />
+      <div aria-hidden="true" className="hero-orb hero-orb-3" />
+
+      <div className="mx-auto w-full max-w-5xl px-6 text-center">
+        <span
+          style={{ animationDelay: "0.1s" }}
+          className="hero-in inline-block rounded-full border border-white/25 bg-white/5 px-4 py-1.5 text-[0.7rem] font-semibold tracking-[0.2em] text-sky-200 backdrop-blur sm:text-xs"
+        >
           {data.badge}
         </span>
-        <h1 style={{ animationDelay: "0.25s" }} className="hero-in mt-5 text-[1.6rem] font-extrabold leading-snug sm:mt-6 sm:whitespace-pre-line sm:text-4xl">
-          {data.title}
+
+        <h1 className="mt-7 text-[1.85rem] font-extrabold leading-tight sm:text-6xl sm:leading-tight">
+          {lines.map((line, i) => (
+            <span key={line} className="block overflow-hidden pb-1">
+              <span
+                style={{ animationDelay: `${0.35 + i * 0.22}s` }}
+                className={`hero-line block ${i === lines.length - 1 ? "hero-shine" : ""}`}
+              >
+                {line}
+              </span>
+            </span>
+          ))}
         </h1>
-        <p style={{ animationDelay: "0.45s" }} className="hero-in mx-auto mt-5 max-w-2xl whitespace-pre-line text-[0.82rem] leading-relaxed sm:mt-6 text-slate-200 sm:text-base">
+
+        <p
+          style={{ animationDelay: "1.0s" }}
+          className="hero-in mt-6 text-base font-semibold text-slate-200 sm:text-2xl"
+        >
+          <HeroRotator words={data.rotatingWords} />
+          {data.rotatingSuffix}
+        </p>
+
+        <p
+          style={{ animationDelay: "1.25s" }}
+          className="hero-in mx-auto mt-6 max-w-2xl text-[0.85rem] leading-relaxed text-slate-300 sm:text-base"
+        >
           {data.subtitle}
         </p>
-        <div style={{ animationDelay: "0.65s" }} className="hero-in mt-7 grid grid-cols-2 justify-center gap-2.5 sm:mt-9 sm:flex sm:flex-row sm:gap-3">
+
+        <div
+          style={{ animationDelay: "1.5s" }}
+          className="hero-in mt-9 grid grid-cols-2 justify-center gap-2.5 sm:flex sm:flex-row sm:gap-3"
+        >
           <a
             href={data.primaryCta.href}
-            className="col-span-2 rounded-lg bg-blue-600 px-3 py-3 text-sm sm:px-7 font-semibold text-white transition hover:bg-blue-700"
+            className="col-span-2 rounded-lg bg-blue-600 px-3 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/30 transition hover:bg-blue-500 sm:px-7"
           >
             {data.primaryCta.text}
           </a>
@@ -27,18 +68,29 @@ export default function Hero({ data }) {
             href={data.secondaryCta.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-lg bg-white/10 px-3 py-3 text-sm sm:px-7 font-semibold text-white ring-1 ring-white/40 transition hover:bg-white/20"
+            className="rounded-lg bg-white/10 px-3 py-3 text-sm font-semibold text-white ring-1 ring-white/30 backdrop-blur transition hover:bg-white/20 sm:px-7"
           >
             {data.secondaryCta.text}
           </a>
           {data.tertiaryCta && (
             <a
               href={data.tertiaryCta.href}
-              className="rounded-lg bg-white/10 px-3 py-3 text-sm sm:px-7 font-semibold text-white ring-1 ring-white/40 transition hover:bg-white/20"
+              className="rounded-lg bg-white/10 px-3 py-3 text-sm font-semibold text-white ring-1 ring-white/30 backdrop-blur transition hover:bg-white/20 sm:px-7"
             >
               {data.tertiaryCta.text}
             </a>
           )}
+        </div>
+      </div>
+
+      {/* 아래로 내려 보라는 표시 */}
+      <div
+        aria-hidden="true"
+        style={{ animationDelay: "2s" }}
+        className="hero-in absolute bottom-6 left-1/2 -translate-x-1/2"
+      >
+        <div className="hero-scroll flex h-9 w-5 justify-center rounded-full border-2 border-white/40 pt-1.5">
+          <span className="h-2 w-1 rounded-full bg-white/70" />
         </div>
       </div>
     </section>

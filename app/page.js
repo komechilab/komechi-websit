@@ -2,7 +2,7 @@ import data from "@/content/data.json";
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import HomeIntro from "@/components/HomeIntro";
+import HomeOverview from "@/components/HomeOverview";
 import QuickLinks from "@/components/QuickLinks";
 import Footer from "@/components/Footer";
 
@@ -13,7 +13,7 @@ export default function Home() {
       <Header header={data.header} nav={data.nav} />
       <main>
         <Hero data={data.hero} />
-        <HomeIntro data={data.promise} />
+        <HomeOverview data={data.overview} />
         <QuickLinks data={data.quickLinks} />
       </main>
       <Footer data={data.footer} />
