@@ -43,11 +43,6 @@ main { animation: pageIn 0.6s ease-out both; }
 /* 스크롤하면 각 영역이 아래에서 떠오름 (ScrollReveal이 클래스를 붙임) */
 .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1); }
 .reveal.is-visible { opacity: 1; transform: none; }
-/* 움직임 줄이기 설정을 켠 사용자에게는 효과를 끔 */
-@media (prefers-reduced-motion: reduce) {
-  main, .hero-zoom, .hero-in { animation: none; }
-  .reveal { opacity: 1; transform: none; transition: none; }
-}
 
 /* 모바일 메뉴 가로 스크롤 시 스크롤바 숨김 */
 .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
@@ -78,11 +73,6 @@ body { word-break: keep-all; overflow-wrap: break-word; }
 .hero-orb-2 { width: 22rem; height: 22rem; right: -6rem; top: 30%; background: #0ea5e9; animation-delay: -5s; }
 .hero-orb-3 { width: 18rem; height: 18rem; left: 30%; bottom: -8rem; background: #14b8a6; opacity: .3; animation-delay: -9s; }
 .hero-scroll span { animation: scrollHint 1.8s ease-in-out infinite; }
-@media (prefers-reduced-motion: reduce) {
-  .hero-line, .hero-shine, .hero-orb, .hero-scroll span { animation: none; }
-  .hero-word { animation: pageIn 0.4s ease both; }
-  .hero-shine { color: #7dd3fc; background: none; }
-}
 
 /* ───── 페이지 배너(밝은 버전) ───── */
 .page-orb-1 { width: 24rem; height: 24rem; left: -7rem; top: -8rem; background: #93c5fd; opacity: .55; }
@@ -98,7 +88,4 @@ body { word-break: keep-all; overflow-wrap: break-word; }
   background-size: 200% auto;
   -webkit-background-clip: text; background-clip: text; color: transparent;
   animation: lineUp 1s cubic-bezier(0.22, 1, 0.36, 1) both, shine 6s linear 1.2s infinite;
-}
-@media (prefers-reduced-motion: reduce) {
-  .page-shine { animation: none; color: #1d4ed8; background: none; }
 }

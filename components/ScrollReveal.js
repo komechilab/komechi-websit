@@ -7,7 +7,6 @@ import { usePathname } from "next/navigation";
 export default function ScrollReveal() {
   const pathname = usePathname();
   useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const targets = document.querySelectorAll("main section:not(:first-child)");
     const io = new IntersectionObserver(
       (entries) =>
