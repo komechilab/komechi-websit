@@ -734,7 +734,12 @@
     "products": {
       "eyebrow": "PRODUCTS · 제품소개",
       "title": "현장에 맞춘 배합\n세라엑스(ceraX)",
-      "description": "건축물 외벽부터 산업용 고온 설비까지, 필요한 성능에 맞춰 설계하고 공급합니다."
+      "description": "건축물 외벽부터 산업용 고온 설비까지, 필요한 성능에 맞춰 설계하고 공급합니다.",
+      "cta": {
+        "text": "자료실(블로그)에서 제품 자료 보기",
+        "sub": "제품별 상세 설명 · 적용 사례 · 시험 자료",
+        "href": "https://blog.naver.com/komechi"
+      }
     },
     "consulting": {
       "eyebrow": "CONSULTING · 경영컨설팅 · PM",

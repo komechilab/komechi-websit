@@ -34,6 +34,22 @@ export default function PageHero({ data }) {
             {data.description}
           </p>
         )}
+        {data.cta && (
+          <a
+            href={data.cta.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ animationDelay: "1.0s" }}
+            className="hero-in group mx-auto mt-7 flex w-full max-w-md items-center gap-3 rounded-2xl bg-white p-3 pr-5 text-left shadow-md ring-1 ring-emerald-100 transition duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:ring-emerald-300"
+          >
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#03C75A] text-lg font-extrabold text-white" aria-hidden="true">N</span>
+            <span className="flex-1">
+              <span className="block text-sm font-extrabold text-slate-900 sm:text-base">{data.cta.text}</span>
+              {data.cta.sub && <span className="mt-0.5 block text-xs text-slate-500">{data.cta.sub}</span>}
+            </span>
+            <span className="text-xl text-emerald-600 transition group-hover:translate-x-1" aria-hidden="true">→</span>
+          </a>
+        )}
       </div>
     </section>
   );
