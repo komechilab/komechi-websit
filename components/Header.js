@@ -74,6 +74,15 @@ export default function Header({ header, nav }) {
               </svg>
               {header.youtubeLabel} 바로가기
             </a>
+            <a
+              href={header.blogUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-xs font-semibold text-slate-700 transition hover:text-green-600"
+            >
+              <span className="flex h-4 w-5 items-center justify-center rounded-sm bg-[#03C75A] text-[0.6rem] font-extrabold text-white" aria-hidden="true">N</span>
+              {header.blogLabel} 바로가기
+            </a>
           </div>
         </div>
 

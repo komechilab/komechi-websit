@@ -81,16 +81,6 @@
       "href": "/spec-request"
     },
     {
-      "label": "자료실(블로그)",
-      "href": "https://blog.naver.com/komechi",
-      "external": true
-    },
-    {
-      "label": "유튜브",
-      "href": "https://www.youtube.com/@komechilab",
-      "external": true
-    },
-    {
       "label": "문의하기",
       "href": "/contact"
     }
@@ -502,7 +492,21 @@
       "C&L Komechi Corporation | CEO Jinwoo Cho | Business Registration No. 571-88-03375 | Founded October 2025",
       "520, 6 Beoman-ro 996beon-gil, Gwangmyeong-si, Gyeonggi-do, Republic of Korea | komechi@naver.com | +82-2-515-9088"
     ],
-    "text": "© 2026 C&L Komechi Corporation. All rights reserved."
+    "text": "© 2026 C&L Komechi Corporation. All rights reserved.",
+    "channels": [
+      {
+        "label": "자료실(블로그)",
+        "href": "https://blog.naver.com/komechi"
+      },
+      {
+        "label": "유튜브",
+        "href": "https://www.youtube.com/@komechilab"
+      },
+      {
+        "label": "인스타그램",
+        "href": "https://www.instagram.com/komechilab"
+      }
+    ]
   },
   "consulting": {
     "id": "consulting",
@@ -703,10 +707,6 @@
       {
         "value": "기술 제휴",
         "label": "일본 연구소와 사업화 협약"
-      },
-      {
-        "value": "19종+",
-        "label": "건축용 10종 · 산업용 9종, 주문 제작"
       },
       {
         "value": "직접 제조",

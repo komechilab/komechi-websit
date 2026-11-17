@@ -29,14 +29,14 @@ export default function HomeOverview({ data }) {
           ))}
         </div>
 
-        <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4">
+        <div className="mt-8 grid grid-cols-3 gap-2.5 sm:gap-3">
           {data.facts.map((fact) => (
             <div
               key={fact.label}
-              className="rounded-xl bg-slate-900 px-4 py-5 text-center text-white"
+              className="rounded-xl bg-slate-900 px-2 py-5 text-center text-white sm:px-4"
             >
-              <p className="text-xl font-extrabold sm:text-2xl">{fact.value}</p>
-              <p className="mt-1 text-xs text-slate-300 sm:text-sm">{fact.label}</p>
+              <p className="text-base font-extrabold sm:text-2xl">{fact.value}</p>
+              <p className="mt-1 text-[0.7rem] leading-snug text-slate-300 sm:text-sm">{fact.label}</p>
             </div>
           ))}
         </div>
