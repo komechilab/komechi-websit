@@ -89,3 +89,7 @@ body { word-break: keep-all; overflow-wrap: break-word; }
   -webkit-background-clip: text; background-clip: text; color: transparent;
   animation: lineUp 1s cubic-bezier(0.22, 1, 0.36, 1) both, shine 6s linear 1.2s infinite;
 }
+
+/* 떠 있는 채널 버튼: 은은하게 퍼지는 빛 */
+@keyframes fabPulse { 0% { box-shadow: 0 0 0 0 rgba(37,99,235,.45); } 70% { box-shadow: 0 0 0 14px rgba(37,99,235,0); } 100% { box-shadow: 0 0 0 0 rgba(37,99,235,0); } }
+.fab-pulse { animation: fabPulse 2.4s ease-out infinite; }

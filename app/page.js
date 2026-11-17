@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import HomeOverview from "@/components/HomeOverview";
 import QuickLinks from "@/components/QuickLinks";
+import HomeChannels from "@/components/HomeChannels";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero data={data.hero} />
         <HomeOverview data={data.overview} />
         <QuickLinks data={data.quickLinks} />
+        <HomeChannels data={data.channels} />
       </main>
       <Footer data={data.footer} />
     </>

@@ -679,7 +679,16 @@
         ],
         "cardUrl": "/card/chojinwoo"
       }
-    ]
+    ],
+    "download": {
+      "eyebrow": "COMPANY PROFILE",
+      "title": "회사소개서 다운로드",
+      "description": "세라엑스(ceraX) 제품군과 시험 결과, 생산 · 품질 관리, 협력 네트워크, 경영컨설팅 · PM까지 한 권에 담았습니다.",
+      "href": "/files/komechi-company-profile-2026.pdf",
+      "fileName": "C&L코메치연구소_회사소개서_2026.pdf",
+      "meta": "PDF · 18쪽 · 약 1.9MB",
+      "button": "PDF 내려받기"
+    }
   },
   "overview": {
     "eyebrow": "한눈에 보는 C&L 코메치 연구소",
@@ -742,5 +751,29 @@
       "title": "필요한 성능을 알려 주시면\n맞춤 배합을 설계합니다",
       "description": "양식을 내려받아 작성한 뒤 메일이나 팩스로 보내 주세요."
     }
+  },
+  "channels": {
+    "eyebrow": "KOMECHI CHANNELS",
+    "title": "현장 이야기를 더 가까이에서 만나 보세요",
+    "items": [
+      {
+        "label": "유튜브",
+        "href": "https://www.youtube.com/@komechilab",
+        "description": "시험 · 시공 영상과 짧은 쇼츠",
+        "handle": "@komechilab"
+      },
+      {
+        "label": "블로그",
+        "href": "https://blog.naver.com/komechi",
+        "description": "제품 자료와 현장 적용 정보",
+        "handle": "blog.naver.com/komechi"
+      },
+      {
+        "label": "인스타그램",
+        "href": "https://www.instagram.com/komechilab",
+        "description": "짧고 빠른 현장 소식",
+        "handle": "@komechilab"
+      }
+    ]
   }
 }

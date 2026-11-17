@@ -59,52 +59,53 @@ export default function Header({ header, nav }) {
               <span className="text-sm text-gray-500">Language</span>
               <LanguageSwitcher languages={header.languages} />
             </div>
-            <a
-              href={header.youtubeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-xs font-semibold text-slate-700 transition hover:text-red-600"
-            >
-              <svg viewBox="0 0 28 20" className="h-4 w-5" aria-hidden="true">
-                <path
-                  d="M27.4 3.1a3.5 3.5 0 0 0-2.46-2.48C22.76.1 14 .1 14 .1s-8.76 0-10.94.52A3.5 3.5 0 0 0 .6 3.1 36.6 36.6 0 0 0 .08 10a36.6 36.6 0 0 0 .52 6.9 3.5 3.5 0 0 0 2.46 2.48C5.24 19.9 14 19.9 14 19.9s8.76 0 10.94-.52a3.5 3.5 0 0 0 2.46-2.48A36.6 36.6 0 0 0 27.92 10a36.6 36.6 0 0 0-.52-6.9Z"
-                  fill="#FF0000"
-                />
-                <path d="M11.2 14.2 18.5 10l-7.3-4.2v8.4Z" fill="#fff" />
-              </svg>
-              {header.youtubeLabel} 바로가기
-            </a>
-            <a
-              href={header.blogUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-xs font-semibold text-slate-700 transition hover:text-green-600"
-            >
-              <span className="flex h-4 w-5 items-center justify-center rounded-sm bg-[#03C75A] text-[0.6rem] font-extrabold text-white" aria-hidden="true">N</span>
-              {header.blogLabel} 바로가기
-            </a>
-            <a
-              href={header.instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-xs font-semibold text-slate-700 transition hover:text-pink-600"
-            >
-              <span className="flex h-4 w-5 items-center justify-center" aria-hidden="true">
-                <svg viewBox="0 0 24 24" className="h-4 w-4">
-                  <defs>
-                    <linearGradient id="igGrad" x1="0" y1="1" x2="1" y2="0">
-                      <stop offset="0" stopColor="#feda75" />
-                      <stop offset=".4" stopColor="#d62976" />
-                      <stop offset="1" stopColor="#4f5bd5" />
-                    </linearGradient>
-                  </defs>
-                  <rect x="2" y="2" width="20" height="20" rx="6" fill="url(#igGrad)" />
-                  <circle cx="12" cy="12" r="4.2" fill="none" stroke="#fff" strokeWidth="2" />
-                  <circle cx="17.3" cy="6.7" r="1.3" fill="#fff" />
-                </svg>
-              </span>
-              {header.instagramLabel} 바로가기
-            </a>
+            {/* 채널 바로가기: 같은 크기·모양의 버튼 3개를 한 줄로 */}
+            <div className="flex items-center gap-1.5">
+              {[
+                {
+                  href: header.youtubeUrl,
+                  label: "유튜브",
+                  icon: (
+                    <span className="flex h-5 w-5 items-center justify-center rounded-md bg-[#FF0000]">
+                      <svg viewBox="0 0 24 24" className="h-3 w-3" fill="#fff"><path d="M8 5v14l11-7z" /></svg>
+                    </span>
+                  ),
+                },
+                {
+                  href: header.blogUrl,
+                  label: "블로그",
+                  icon: (
+                    <span className="flex h-5 w-5 items-center justify-center rounded-md bg-[#03C75A] text-[0.65rem] font-extrabold text-white">
+                      N
+                    </span>
+                  ),
+                },
+                {
+                  href: header.instagramUrl,
+                  label: "인스타그램",
+                  icon: (
+                    <span className="flex h-5 w-5 items-center justify-center rounded-md bg-gradient-to-tr from-[#feda75] via-[#d62976] to-[#4f5bd5]">
+                      <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="#fff" strokeWidth="2.4">
+                        <rect x="3" y="3" width="18" height="18" rx="5" />
+                        <circle cx="12" cy="12" r="4" />
+                      </svg>
+                    </span>
+                  ),
+                },
+              ].map((c) => (
+                <a
+                  key={c.label}
+                  href={c.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`코메치 ${c.label} 바로가기`}
+                  className="flex items-center gap-1.5 rounded-full border border-gray-200 bg-white py-1 pl-1 pr-3 text-xs font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900"
+                >
+                  {c.icon}
+                  {c.label}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 

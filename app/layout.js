@@ -2,6 +2,7 @@ import "./globals.css";
 import data from "@/content/data.json";
 import GoogleTranslate from "@/components/GoogleTranslate";
 import ScrollReveal from "@/components/ScrollReveal";
+import ChannelFab from "@/components/ChannelFab";
 
 export const metadata = {
   title: data.site.title,
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <GoogleTranslate />
         {children}
         <ScrollReveal />
+        <ChannelFab channels={data.channels.items} />
       </body>
     </html>
   );
