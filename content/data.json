@@ -392,8 +392,6 @@
     "kakaoHref": "https://open.kakao.com/o/smVVxwNi",
     "emailButtonText": "이메일 발송",
     "emailButtonHref": "mailto:komechi@naver.com",
-    "youtubeButtonText": "유튜브 채널",
-    "youtubeButtonHref": "https://www.youtube.com/@komechilab",
     "infoBlocks": [
       {
         "title": "공공 조달 및 제품 적용 검토",

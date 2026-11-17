@@ -46,35 +46,30 @@ export default function Contact({ data }) {
           </h2>
           <p className="mt-4 text-sm text-slate-300">{data.sideSubtitle}</p>
 
-          <div className="mt-8 grid grid-cols-3 gap-3">
+          <div className="mt-8 grid grid-cols-2 gap-3">
             <a
               href={data.kakaoHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-2 rounded-lg bg-blue-600 px-4 py-5 text-center transition hover:bg-blue-700"
+              className="flex flex-col items-center gap-2.5 rounded-xl bg-[#FEE500] px-4 py-5 text-center text-[#191919] transition hover:brightness-95"
             >
-              <span className="text-2xl">💬</span>
-              <span className="text-sm font-semibold">{data.kakaoText}</span>
+              {/* 카카오톡 말풍선 */}
+              <svg viewBox="0 0 24 24" className="h-9 w-9" aria-hidden="true">
+                <path fill="#191919" d="M12 3.5c-5.3 0-9.5 3.3-9.5 7.4 0 2.6 1.7 4.9 4.3 6.2l-1.1 4a.4.4 0 0 0 .6.4l4.7-3.1c.3 0 .7.1 1 .1 5.3 0 9.5-3.3 9.5-7.4S17.3 3.5 12 3.5z" />
+                <text x="12" y="13.4" textAnchor="middle" fontSize="5.2" fontWeight="800" fill="#FEE500" fontFamily="Arial, sans-serif">TALK</text>
+              </svg>
+              <span className="text-sm font-bold">{data.kakaoText}</span>
             </a>
             <a
               href="#inquiry-form"
-              className="flex flex-col items-center gap-2 rounded-lg bg-white/10 px-4 py-5 text-center ring-1 ring-white/30 transition hover:bg-white/20"
+              className="flex flex-col items-center gap-2.5 rounded-xl bg-[#03C75A] px-4 py-5 text-center text-white transition hover:brightness-95"
             >
-              <span className="text-2xl">✉️</span>
-              <span className="text-sm font-semibold">
-                {data.emailButtonText}
+              {/* 네이버 메일 */}
+              <span className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-white" aria-hidden="true">
+                <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="#03C75A" strokeWidth="2.2"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3.5 6 8.5 7 8.5-7" /></svg>
+                <span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded bg-[#03C75A] text-[0.6rem] font-extrabold text-white ring-2 ring-white">N</span>
               </span>
-            </a>
-            <a
-              href={data.youtubeButtonHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex flex-col items-center gap-2 rounded-lg bg-red-600 px-4 py-5 text-center transition hover:bg-red-700"
-            >
-              <span className="text-2xl">▶</span>
-              <span className="text-sm font-semibold">
-                {data.youtubeButtonText}
-              </span>
+              <span className="text-sm font-bold">{data.emailButtonText}</span>
             </a>
           </div>
 
