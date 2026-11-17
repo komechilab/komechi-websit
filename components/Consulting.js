@@ -1,11 +1,11 @@
 export default function Consulting({ data }) {
   return (
-    <section id={data.id} className="bg-slate-900 py-20 text-white">
+    <section id={data.id} className="bg-slate-900 py-12 sm:py-20 text-white">
       <div className="mx-auto max-w-6xl px-6">
         <p className="text-sm font-bold tracking-wide text-blue-400">
           {data.eyebrow}
         </p>
-        <h2 className="mt-2 text-4xl font-extrabold">{data.title}</h2>
+        <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold">{data.title}</h2>
         <p className="mt-4 max-w-3xl text-slate-300">{data.subtitle}</p>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

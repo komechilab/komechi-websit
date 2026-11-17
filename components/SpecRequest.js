@@ -1,6 +1,6 @@
 export default function SpecRequest({ data }) {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-20">
+    <section className="mx-auto max-w-6xl px-6 py-12 sm:py-20">
       <a
         href={data.backHref}
         className="text-sm font-semibold text-blue-600 hover:underline"
@@ -11,7 +11,7 @@ export default function SpecRequest({ data }) {
       <p className="mt-6 text-sm font-bold tracking-wide text-blue-600">
         {data.eyebrow}
       </p>
-      <h1 className="mt-2 text-4xl font-extrabold text-slate-900">
+      <h1 className="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900">
         {data.title}
       </h1>
       <p className="mt-4 max-w-3xl text-gray-600">{data.subtitle}</p>

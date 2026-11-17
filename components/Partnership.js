@@ -32,7 +32,7 @@ export default function Partnership({ data }) {
 
   return (
     <section
-      className="relative bg-slate-900 bg-cover bg-center py-20"
+      className="relative bg-slate-900 bg-cover bg-center py-12 sm:py-20"
       style={{
         backgroundImage: `linear-gradient(rgba(8,13,28,0.85), rgba(8,13,28,0.9)), url(${data.backgroundImage})`,
       }}
@@ -42,7 +42,7 @@ export default function Partnership({ data }) {
           <p className="text-sm font-bold tracking-wide text-blue-400">
             {data.eyebrow}
           </p>
-          <h2 className="mt-2 text-4xl font-extrabold">{data.title}</h2>
+          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold">{data.title}</h2>
           <p className="mx-auto mt-4 max-w-3xl text-slate-300">
             {data.subtitle}
           </p>

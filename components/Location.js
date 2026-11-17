@@ -1,11 +1,11 @@
 export default function Location({ data }) {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-20">
+    <section className="mx-auto max-w-6xl px-6 py-12 sm:py-20">
       <div className="text-center">
         <p className="text-sm font-bold tracking-wide text-blue-600">
           {data.eyebrow}
         </p>
-        <h2 className="mt-2 text-4xl font-extrabold text-slate-900">
+        <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900">
           {data.title}
         </h2>
         <p className="mx-auto mt-4 max-w-3xl text-gray-600">{data.subtitle}</p>

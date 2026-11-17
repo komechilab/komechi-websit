@@ -1,10 +1,10 @@
 export default function PromiseSection({ data }) {
   return (
-    <section id="about" className="mx-auto max-w-6xl px-6 py-20">
+    <section id="about" className="mx-auto max-w-6xl px-6 py-12 sm:py-20">
       <p className="text-sm font-bold tracking-wide text-blue-600">
         {data.eyebrow}
       </p>
-      <h2 className="mt-2 text-4xl font-extrabold text-slate-900">
+      <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900">
         {data.title}
       </h2>
       <p className="mt-4 max-w-3xl text-gray-600">{data.subtitle}</p>

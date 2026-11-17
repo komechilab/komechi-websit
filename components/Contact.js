@@ -35,7 +35,7 @@ export default function Contact({ data }) {
   }
 
   return (
-    <section id={data.id} className="mx-auto max-w-6xl px-6 py-20">
+    <section id={data.id} className="mx-auto max-w-6xl px-6 py-12 sm:py-20">
       <div className="grid overflow-hidden rounded-2xl shadow-lg lg:grid-cols-2">
         <div className="bg-slate-900 p-10 text-white">
           <p className="text-sm font-bold tracking-wide text-blue-400">

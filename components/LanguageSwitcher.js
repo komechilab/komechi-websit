@@ -46,7 +46,7 @@ export default function LanguageSwitcher({ languages }) {
     <select
       onChange={handleChange}
       defaultValue="ko"
-      className="notranslate rounded-md border border-gray-200 px-3 py-1.5 text-sm text-slate-700"
+      className="notranslate w-[5.5rem] rounded-md border border-gray-200 px-2 py-1.5 text-xs text-slate-700 sm:w-auto sm:px-3 sm:text-sm"
     >
       {languages.map((lang) => (
         <option key={lang.code} value={lang.code}>
