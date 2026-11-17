@@ -3,6 +3,7 @@ import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import PromiseSection from "@/components/PromiseSection";
 import Partnership from "@/components/Partnership";
+import Advisor from "@/components/Advisor";
 import Location from "@/components/Location";
 import Footer from "@/components/Footer";
 
@@ -18,6 +19,7 @@ export default function AboutPage() {
       <Header header={data.header} nav={data.nav} />
       <main>
         <PromiseSection data={data.promise} />
+        <Advisor data={data.ceo} />
         <Partnership data={data.partnership} />
         <Location data={data.location} />
       </main>
