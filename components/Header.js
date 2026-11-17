@@ -83,6 +83,28 @@ export default function Header({ header, nav }) {
               <span className="flex h-4 w-5 items-center justify-center rounded-sm bg-[#03C75A] text-[0.6rem] font-extrabold text-white" aria-hidden="true">N</span>
               {header.blogLabel} 바로가기
             </a>
+            <a
+              href={header.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-xs font-semibold text-slate-700 transition hover:text-pink-600"
+            >
+              <span className="flex h-4 w-5 items-center justify-center" aria-hidden="true">
+                <svg viewBox="0 0 24 24" className="h-4 w-4">
+                  <defs>
+                    <linearGradient id="igGrad" x1="0" y1="1" x2="1" y2="0">
+                      <stop offset="0" stopColor="#feda75" />
+                      <stop offset=".4" stopColor="#d62976" />
+                      <stop offset="1" stopColor="#4f5bd5" />
+                    </linearGradient>
+                  </defs>
+                  <rect x="2" y="2" width="20" height="20" rx="6" fill="url(#igGrad)" />
+                  <circle cx="12" cy="12" r="4.2" fill="none" stroke="#fff" strokeWidth="2" />
+                  <circle cx="17.3" cy="6.7" r="1.3" fill="#fff" />
+                </svg>
+              </span>
+              {header.instagramLabel} 바로가기
+            </a>
           </div>
         </div>
 
