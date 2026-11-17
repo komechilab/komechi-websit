@@ -13,7 +13,7 @@ export default function Hero({ data }) {
         <h1 className="mt-6 text-3xl font-extrabold leading-snug sm:whitespace-pre-line sm:text-4xl">
           {data.title}
         </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-sm text-slate-200 sm:text-base">
+        <p className="mx-auto mt-6 max-w-2xl whitespace-pre-line text-sm text-slate-200 sm:text-base">
           {data.subtitle}
         </p>
         <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
