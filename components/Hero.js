@@ -31,6 +31,14 @@ export default function Hero({ data }) {
           >
             {data.secondaryCta.text}
           </a>
+          {data.tertiaryCta && (
+            <a
+              href={data.tertiaryCta.href}
+              className="rounded-lg bg-white/10 px-7 py-3 text-sm font-semibold text-white ring-1 ring-white/40 transition hover:bg-white/20"
+            >
+              {data.tertiaryCta.text}
+            </a>
+          )}
         </div>
       </div>
     </section>

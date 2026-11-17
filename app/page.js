@@ -3,6 +3,8 @@ import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Business from "@/components/Business";
+import Consulting from "@/components/Consulting";
+import Advisor from "@/components/Advisor";
 import Partnership from "@/components/Partnership";
 import PromiseSection from "@/components/PromiseSection";
 import Process from "@/components/Process";
@@ -18,6 +20,8 @@ export default function Home() {
       <main>
         <Hero data={data.hero} />
         <Business data={data.business} />
+        <Consulting data={data.consulting} />
+        <Advisor data={data.advisor} />
         <Partnership data={data.partnership} />
         <PromiseSection data={data.promise} />
         <Process data={data.process} />
